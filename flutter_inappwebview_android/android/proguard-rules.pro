@@ -15,3 +15,9 @@
      private *;
 }
 -keep class com.pichillilorenzo.flutter_inappwebview_android.** { *; }
+
+# Keep the BackEvent class
+-keep class android.window.BackEvent { *; }
+
+# Keep the FlutterActivity class and its methods
+-keep class io.flutter.embedding.android.FlutterActivity { *; }
